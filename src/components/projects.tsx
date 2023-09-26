@@ -1,7 +1,7 @@
 import React from 'react'
-import Image from 'next/image'
 import SectionHeading from './section-heading'
 import { projectsData } from '@/lib/data'
+import Project from './project';
 
 export default function Projects() {
   return (
@@ -21,23 +21,3 @@ export default function Projects() {
   )
 }
 
-type ProjectProps = (typeof projectsData)[number];
-
-function Project({
-    title,
-    description,
-    tags,
-    imageUrl }: ProjectProps ) {
-    return (
-        <section>
-            <h3>{title}</h3>
-            <p>{description}</p>
-            <ul>
-                {tags.map((tag, index) => (
-                    <li key={index}>{tag}</li>
-                ))}
-            </ul>
-            <Image src={imageUrl} alt="Project I worked on" quality={95} />
-        </section>
-    )
-}
