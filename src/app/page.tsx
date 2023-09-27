@@ -10,6 +10,7 @@ export default function Home() {
       <SectionDivider/>
       <About/>
       <Projects/>
+      <div className="w-10 h-[500px]"></div>
     </main>
   )
 }
