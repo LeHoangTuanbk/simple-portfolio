@@ -10,7 +10,7 @@ import { FaGithubSquare } from 'react-icons/fa';
 import { useSectionInView } from '@/lib/hooks';
 
 export default function Intro() {
-    const { ref } = useSectionInView({ sectionName: 'About' });
+    const { ref } = useSectionInView({ sectionName: 'Home', threshold: 0.6 });
     return (
         <section ref={ref} id="home" className='mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]'>
             <div className='flex items-center justify-center'>
