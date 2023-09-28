@@ -5,3 +5,7 @@
 html {
     --line-color: #f3f3f3;
 }
+
+html.dark {
+    --line-color: rgba(255, 255, 255, 0.2);
+}
